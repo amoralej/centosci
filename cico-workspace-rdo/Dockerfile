@@ -10,5 +10,6 @@ RUN yum update -y && yum clean all
 RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py && python2 ./get-pip.py
 RUN pip install tox
 RUN pip-3 install virtualenv
+RUN yum install -y https://cbs.centos.org/kojifiles/packages/python-cicoclient/0.4.6/1.el7/noarch/python-cicoclient-0.4.6-1.el7.noarch.rpm
 
 USER 1001
